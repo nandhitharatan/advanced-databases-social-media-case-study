@@ -1,0 +1,123 @@
+# =============================================================================
+# .gitignore — Advanced Databases Social Media Case Study
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Python
+# -----------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+*.pyo
+*.pyc
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+ENV/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+.eggs/
+
+# Python test and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+.hypothesis/
+
+# Jupyter Notebooks (checkpoints)
+.ipynb_checkpoints/
+*.ipynb
+
+# -----------------------------------------------------------------------------
+# Environment Variables and Secrets
+# -----------------------------------------------------------------------------
+.env
+.env.local
+.env.*.local
+*.secret
+secrets/
+
+# Firebase service account key files — NEVER commit these
+*service-account*.json
+*serviceAccount*.json
+firebase-adminsdk-*.json
+google-credentials.json
+
+# InfluxDB tokens
+influxdb-token.txt
+*.token
+
+# -----------------------------------------------------------------------------
+# Database Data Files (Generated at Runtime)
+# -----------------------------------------------------------------------------
+
+# CockroachDB local data directory
+cockroach-data/
+*.cockroachdb
+
+# ChromaDB persistent storage directory
+chromadb_store/
+chroma/
+*.chroma
+
+# InfluxDB local data
+influxdb_data/
+bolt/
+
+# Neo4j local data
+neo4j-data/
+graph.db/
+
+# Generated embedding files (large binary)
+*.npy
+*.pkl
+embeddings/
+
+# -----------------------------------------------------------------------------
+# Datasets (Generated Files)
+# When committed, use the CSV files in datasets/ — not generated binary formats
+# -----------------------------------------------------------------------------
+*.parquet
+*.feather
+*.h5
+*.hdf5
+
+# -----------------------------------------------------------------------------
+# IDE and Editor
+# -----------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# -----------------------------------------------------------------------------
+# Logs and Temporary Files
+# -----------------------------------------------------------------------------
+*.log
+*.tmp
+*.bak
+tmp/
+temp/
+
+# -----------------------------------------------------------------------------
+# OS Files
+# -----------------------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
